@@ -1,13 +1,46 @@
-# Responsive Travel Website 🌊
-## [Watch it on youtube](https://youtu.be/YzRDHxbw1RU)
-###  Responsive Travel Website 🌊
+# 🌍 Responsive Travel Website
 
-- Travel website to the most beautiful beaches, using HTML, CSS & JAVASCRIPT.
-- Contains animations when scrolling.
-- Includes a dark and light mode.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+A modern and responsive travel website showcasing popular destinations, with smooth UI and an optional database setup for dynamic content. This project is ideal for learning frontend development with integration of basic backend/database using XAMPP.
 
-Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+---
 
-![travel-website](/preview.png)
+## 📁 Project Structure
+
+---
+
+## ✨ Features
+
+- Fully responsive layout (mobile, tablet, desktop)
+- Smooth scrolling navigation
+- Interactive elements (hamburger menu, cards, etc.)
+- Clean and modern design
+- Optional backend integration with MySQL database
+
+---
+
+## ⚙️ Technologies Used
+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Database**: MySQL (via `.sql` file)
+- **Local Server**: Apache (via XAMPP)
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+- [XAMPP](https://www.apachefriends.org/index.html) installed
+- A web browser (e.g., Chrome, Firefox)
+
+### 🧩 Installation Steps
+
+1. **Move the project to `htdocs`:**
+   ```bash
+   C:\xampp\htdocs\responsive-travel-website-main
+   ```
+
+👤 Author
+Jasmit Bajaria
+📍 Mumbai, India
+🔗 https://github.com/jasmitbajaria
