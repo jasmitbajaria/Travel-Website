@@ -1,0 +1,137 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 30, 2025 at 05:17 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `users`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `booking`
+--
+
+CREATE TABLE `booking` (
+  `booking_id` int(11) NOT NULL,
+  `cname` varchar(30) NOT NULL,
+  `cemail` varchar(30) NOT NULL,
+  `contact` int(14) NOT NULL,
+  `caddress` varchar(200) NOT NULL,
+  `booking_date` datetime NOT NULL,
+  `start_date` datetime NOT NULL,
+  `end_date` datetime NOT NULL,
+  `user_id` varchar(14) NOT NULL,
+  `place` varchar(20) NOT NULL,
+  `guest` int(4) NOT NULL,
+  `tprice` int(10) NOT NULL,
+  `isapv` tinyint(1) NOT NULL,
+  `isrej` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`booking_id`, `cname`, `cemail`, `contact`, `caddress`, `booking_date`, `start_date`, `end_date`, `user_id`, `place`, `guest`, `tprice`, `isapv`, `isrej`) VALUES
+(1, 'preetkumarrrrrr', 'preeti@gmail.com', 2147483647, 'Room no.14,bidg no.7,raam nagar,opp to Patkar College,sv road, goregaon w', '2023-04-23 00:00:00', '2023-04-24 00:00:00', '2023-04-26 00:00:00', '6413fa7765d2b', 'Mumbai', 5, 40000, 0, 1),
+(47, 'jasmit bajaria', 'jasmitbajaria25@gmail.com', 2147483647, 'B L Murar marg', '2023-04-23 00:00:00', '2023-04-23 00:00:00', '2023-04-25 00:00:00', '6413fa7765d2b', 'Agra', 3, 30000, 1, 0),
+(48, 'preet test2 ', 'p@gmail.com', 2147483647, 'B L Murar marg', '2023-04-23 00:00:00', '2023-04-25 00:00:00', '2023-04-27 00:00:00', '6413fa7765d2b', 'North India', 3, 60000, 1, 0),
+(49, 'test4', 'jasmitbajaria25@gmail.com', 2147483647, 'B L Murar marg', '2023-04-23 00:00:00', '2023-04-26 00:00:00', '2023-05-01 00:00:00', '6413fa7765d2b', 'Agra', 4, 200000, 0, 0),
+(50, 'kalp', 'kalp@gmail.com', 2147483647, 'B L Murar marg', '2023-04-23 00:00:00', '2023-04-23 00:00:00', '2023-04-25 00:00:00', '6429a92bbf0cb', 'Agra', 3, 150000, 0, 0),
+(51, 'jasmit bajaria', 'jasmitbajaria25@gmail.com', 2147483647, 'B L Murar marg', '2023-04-24 00:00:00', '2023-04-28 00:00:00', '2023-05-03 00:00:00', '6429a92bbf0cb', 'Mumbai', 7, 175000, 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `s_no` int(10) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `date` date NOT NULL,
+  `user_id` varchar(17) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`s_no`, `username`, `password`, `date`, `user_id`) VALUES
+(1, 'fifyh', '123456', '2023-02-16', ''),
+(2, 'sixth', '123456', '2023-02-16', ''),
+(3, 'prashant', 'pras123', '2023-02-16', ''),
+(4, 'seventh', '12345678', '2023-02-17', ''),
+(5, 'kalp', '123456', '2023-02-17', ''),
+(6, 'preetmoga', '123456', '2023-03-17', '6413fa7765d2b'),
+(7, 'new email', '12345678', '2023-03-17', '64142564a5177'),
+(8, 'admin', '123456', '2023-03-22', '641afeb69b2b0'),
+(9, 'Jasmit', '8108', '2023-04-02', '6429a92bbf0cb'),
+(10, '', '', '2023-04-23', '64452447385a0'),
+(11, '', '', '2023-04-23', '6445244e574cf'),
+(12, '', '', '2023-04-23', '64452454d5d41'),
+(13, '', '', '2023-04-23', '64452459db479'),
+(14, '', '', '2023-04-23', '6445252df1391'),
+(15, '', '', '2023-04-23', '64452537f21be'),
+(16, '', '', '2023-04-23', '6445253d1eb04'),
+(17, '', '', '2023-04-23', '6445254096f3c'),
+(18, '', '', '2023-04-23', '6445254634d91'),
+(19, '', '', '2023-04-23', '6445256b009cb'),
+(20, '', '', '2023-04-23', '6445293b96c86'),
+(21, '', '', '2023-04-23', '6445295ae16e0'),
+(22, '', '', '2023-04-23', '64452a5e89c6e'),
+(23, 'kastrutam thapa', 'adcude', '2023-04-24', '64464db5d2c8c');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `booking`
+--
+ALTER TABLE `booking`
+  ADD PRIMARY KEY (`booking_id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`s_no`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `booking`
+--
+ALTER TABLE `booking`
+  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `s_no` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
